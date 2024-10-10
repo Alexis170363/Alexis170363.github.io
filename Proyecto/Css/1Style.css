@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: initial;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../Imagenes/carpintero.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 400;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color: #CE967B;
+}
+#menu{
+    display: none;
+}
+.menu-icon{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    text-align: center;
+}
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: auto;
+}
+.header-content p{
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250PX;
+    margin-bottom: 25px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.btn-1:hover{
+    background-color: #CE967B;
+}
+.carpinteria{
+    padding: 100px 0;
+    background-color: beige;
+    position: relative;
+}
+.carpinteria-content{
+    text-align: center;
+}
+.carpinteria-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+    font-family: auto;
+}
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.carpinteria-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; 
+    margin-top: 30px;
+}
+.carpinteria-1{
+    padding: 0 25px;
+
+}
+.carpinteria-1 img{
+    width: 200px;
+}
+.carpinteria-img{
+    position: absolut;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+}
+
+.img-2{
+    margin-top: 39px;
+}
+.img-3{
+    margin-top: 11px;
+}@media (max-width: 991px) {
+    .menu .container {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: block; /* Changed initial to block for better semantics */
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block; /* Changed initial to block to improve readability */
+    }
+
+    .header {
+        min-height: 0; /* Changed 0vh to 0 for better readability */
+    }
+
+    .header-content {
+        padding: 100px 30px;
+        margin-top: 25px; /* Combined margin-top into the previous header-content rule */
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .carpinteria {
+        padding: 30px;
+    }
+
+    .carpinteria-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        font-size: 17px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+    .carpinteria-group{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    
+
+    
+}
